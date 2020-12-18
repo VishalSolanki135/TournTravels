@@ -1,0 +1,104 @@
+#testimonials{
+  $width-size: 70vw;
+
+  background-color: $bg-color;
+  margin: px-to-rem(200px) 0;
+  position: relative;
+
+  padding: 300px 0;
+  clip-path: polygon(0 20%, 100% 0%, 100% 78%, 0% 100%);
+
+  #testimonials-bg{
+    position: absolute;
+    width: $width-size;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+  }
+  article{
+    $color: #0d77bb;
+    $alt-color: #184a6a;
+
+    position: relative;
+    z-index: 20;
+    padding: px-to-rem(108px) 0 px-to-rem(76px);
+    text-align: center;
+
+    h2{
+      text-transform: uppercase;
+      font-size: px-to-rem(36px);
+      margin-bottom: 24px;
+    }
+    h5{
+      font-size: px-to-rem(24px);
+
+      span{
+        font-size: px-to-rem(36px);
+        color: $color;
+      }
+    }
+    #reviews{
+      //display: flex;
+      // justify-content: center;
+      color: white;
+      margin: px-to-rem(32px) px-to-rem(24px);
+
+
+      .review{
+        background-color: $color;
+        margin: 0 px-to-rem(25px);
+        padding:  px-to-rem(18px);
+
+        .reviewr-details{
+          display: flex;
+          align-items: center;
+
+          figure{
+            border-radius: 50%;
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+          }
+
+          .details{
+            margin-left: px-to-rem(18px);
+            letter-spacing: 1px;
+            .name{
+              font-size: px-to-rem(18px);
+              text-transform: uppercase;
+              margin-bottom: px-to-rem(6px);
+            }
+            .from{
+              font-size: px-to-rem(14px);
+              text-align: left;
+            }
+          }
+        }
+        .review-text{
+          font-size: px-to-rem(16px);
+          margin-top: px-to-rem(14px);
+          text-align: left;
+          line-height: 200%;
+        }
+      }
+      .review:nth-of-type(1) figure{ background-image: url(get-image("av.jpg")); }
+      .review:nth-of-type(2) figure{ background-image: url(get-image("virat-kohli-enjoy-hd-wallpapers.jpg")); }
+      .review:nth-of-type(3) figure{ background-image: url(get-image("face-3.jpg")); }
+
+    }
+  }
+  a{
+    position: relative;
+    display: block;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+    font-size: 32px;
+    color: #8a8a8a;
+  }
+  
+
+}
